@@ -19,7 +19,7 @@ const err = (res, status, message) => res.status(status).json({ success: false, 
 // ── Docs ──
 app.get("/", (req, res) => {
   res.json({
-    name: "🍛 Indian Food Nutrition API",
+    name: "Indian Food Nutrition API",
     version: "2.0.0",
     total_foods: foods.length,
     categories: [...new Set(foods.map(f => f.category))],
